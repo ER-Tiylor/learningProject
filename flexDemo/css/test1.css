@@ -1,0 +1,23 @@
+html,body{
+	height: 100%;
+	width: 100%;
+	padding:0px;
+	margin: 0px;
+}
+.root{
+	display: flex;
+	height: 100%;
+	flex-direction: column;
+}
+.root div{
+	border:1px solid;
+}
+#s1{
+	height: 86px;
+}
+#s2{
+	flex-grow: 1;
+}
+#s3{
+	height: 56px;
+}

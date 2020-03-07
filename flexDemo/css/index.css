@@ -1,0 +1,27 @@
+.root{
+	display: flex;
+	
+	flex-flow:  wrap;
+	/*justify-content: center;*/
+	
+	/*align-content: flex-end;*/
+	flex-direction: column;
+	height: 100px;
+}
+.root div {
+	
+	width: 50px;
+	border:solid 1px;
+}
+#a11{
+	flex-basis: 80px;
+	flex-grow: 1;
+}
+#a22{
+flex-grow: 1;
+
+}
+#a33{
+flex-grow: 1;
+
+}
