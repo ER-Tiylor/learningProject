@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+<head>
+    <meta charset="UTF-8">
+    <title>CalendarDemo</title>
+    <link rel="stylesheet" href="css/index.css">
+
+</head>
+<body>
+    <div class="container">
+<!--        选择区域-->
+        <div class="select">
+            <form action="" name="form1">
+                <select name="years">
+                    <option value="2020">2020</option>
+                    <option value="2019">2019</option>
+                    <option value="2018">2018</option>
+                    <option value="2017">2017</option>
+                    <option value="2016">2016</option>
+                    <option value="2015">2015</option>
+                    <option value="2014">2014</option>
+                    <option value="2013">2013</option>
+                    <option value="2012">2012</option>
+
+                </select>
+                <br>
+                <input width="80px" type="button" value="Jan" onclick="exet(this)"></input>
+                <input type="button" value="Feb" onclick="exet(this)"></input>
+                <input type="button" value="Mar" onclick="exet(this)"></input>
+                <input type="button" value="Apr" onclick="exet(this)"></input>
+                <input type="button" value="May" onclick="exet(this)"></input>
+                <input type="button" value="Jun" onclick="exet(this)"></input>
+                <input type="button" value="Jul" onclick="exet(this)"></input>
+                <input type="button" value="Aug" onclick="exet(this)"></input>
+                <input type="button" value="Sept" onclick="exet(this)"></input>
+                <input type="button" value="Oct" onclick="exet(this)"></input>
+                <input type="button" value="Nov" onclick="exet(this)"></input>
+                <input type="button" value="Dec" onclick="exet(this)"></input>
+            </form>
+            <span id="today"></span>
+            <br>
+            <button id="todayBut" onclick="Today()">回到今天</button>
+            <div class="tips">
+                <ul>
+                    <li>注意：请在分辨率1366*768以上的设备使用，效果最佳</li>
+
+                </ul>
+            </div>
+        </div>
+        <div class="c-body">
+            <div class="week-row">
+                <div class="week ">星期日</div>
+                <div class="week ">星期一</div>
+                <div class="week ">星期二</div>
+                <div class="week ">星期三</div>
+                <div class="week ">星期四</div>
+                <div class="week ">星期五</div>
+                <div class="week ">星期六</div>
+            </div>
+            <div class="day-rows">
+<!--                日期渲染的地方-->
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="js/index.js"></script>
+
+</body>
+</html>
