@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        ul,li{
+            list-style: none;
+        }
+        a{
+            text-decoration: none;
+        }
+        .focus {
+            position: relative;
+            width:590px;
+            height: 455px;
+            background-color: purple;
+            overflow: hidden;
+        }
+        .focus ul li{
+            float: left;
+        }
+        .focus ul {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 600%;
+        }
+        .arrow-l,.arrow-r{
+            display: none;
+            position: absolute;
+            top: 50%;
+            margin-top: -20px;
+            width: 24px;
+            height: 40px;
+            background: rgba(0,0,0,.3);
+            text-align: center;
+            line-height: 40px;
+            color: #FFFFFF;
+            font-family: 'icomoon';
+            font-size: 18px;
+            z-index: 2;
+        }
+        .arrow-r{
+            right: 0;
+        }
+        .circle {
+            position: absolute;
+            bottom: 10px;
+            left: 50px;
+        }
+
+        .circle li {
+            float: left;
+            width: 8px;
+            height: 8px;
+            /*background-color: #fff;*/
+            border: 2px solid rgba(255, 255, 255, 0.5);
+            margin: 0 3px;
+            border-radius: 50%;
+            /*鼠标经过显示小手*/
+            cursor: pointer;
+        }
+        .current {
+            background-color: #fff;
+        }
+    </style>
+    <script src="js/animate.js"></script>
+    <script src="js/index.js"></script>
+</head>
+
+<body>
+ <div class="focus fl">
+     <a href="javascript:;" class="arrow-l">&lt;</a>
+     <a href="javascript:;" class="arrow-r">&gt;</a>
+     <ul>
+         <li>
+             <a href="#"><img src="upload/focus1.webp" alt=""></a>
+         </li>
+         <li>
+             <a href="#"><img src="upload/focus2webp.webp" alt=""></a>
+         </li>
+         <li>
+             <a href="#"><img src="upload/focus3.webp" alt=""></a>
+         </li>
+         <li>
+             <a href="#"><img src="upload/focus4.jpg" alt=""></a>
+         </li>
+
+     </ul>
+     <ol class="circle">
+
+     </ol>
+ </div>
+<script>
+
+
+</script>
+</body>
+
+</html>
