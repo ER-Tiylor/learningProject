@@ -8,13 +8,13 @@
     <style>
         .container{
             width: 350px;
-            height: 90px;
+            height: 180px;
             display: flex;
-            justify-content:space-between;
             background: #fff;
             box-shadow:7px 7px #D6DADB ;
             box-sizing: border-box;
             padding-top: 10px;
+            flex-wrap: wrap;
         }
         a{
             text-decoration: none;
@@ -24,21 +24,29 @@
             width: 72px;
             height: 72px;
             text-align: center;
+            margin-right: 15px;
+            margin-bottom: 10px;
         }
         .item div{
             height: 44px;
         }
-        .favorite{
-            background:url(./imgs/shouc.png) no-repeat center top ;
+        .book{
+            background:url(./imgs/sj.png) no-repeat center top ;
         }
-        .record{
-            background:url(./imgs/jilu.png) no-repeat center top ;
+        .upload{
+            background:url(./imgs/sc.png) no-repeat center top ;
         }
-        .sign-in{
-           background:url(./imgs/qiand.png) no-repeat center top ; 
+        .download{
+           background:url(./imgs/xz.png) no-repeat center top ; 
         }
-        .blog{
-           background:url(./imgs/bkw.png) no-repeat center top ; 
+        .posts{
+           background:url(./imgs/tz.png) no-repeat center top ; 
+        }
+        .create{
+           background:url(./imgs/czzx.png) no-repeat center top ; 
+        }
+        .analysis{
+            background:url(./imgs/sjfx.png) no-repeat center top ; 
         }
     </style>
 </head>
@@ -46,24 +54,34 @@
     <div class="container">
         <a href="##">
             <div class="item">
-                <div class="favorite"></div>收藏夹
+                <div class="book"></div>我的图书
+            </div>
+        </a>
+        <a href="">
+            <div class="item ">
+                <div class="upload"></div>文件上传
             </div>
         </a>
         <a href="">
             <div class="item">
-                <div class="record"></div>浏览记录
+                <div class="download"></div>文件下载
             </div>
         </a>
         <a href="">
             <div class="item">
-                <div class="sign-in"></div>签到
+                <div class="posts"></div>帖子
             </div>
         </a>
         <a href="">
             <div class="item">
-                <div class="blog"></div>博客屋
+                <div class="create"></div>创作中心
             </div>
         </a>
+        <a href="">
+            <div class="item">
+                <div class="analysis"></div>数据分析
+            </div>
+        </a>   
     </div>
 </body>
 </html>

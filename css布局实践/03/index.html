@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            width: 1200px;
+            margin: 0 auto;
+            background: skyblue;
+        }
+        .container-mobile{
+            background: skyblue;
+            width: 98%;
+            margin: 0 auto;
+        }
+        .container-flex{
+            margin-top: 20px;
+            background: skyblue;
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .item{
+            width: 300px;
+            height: 100px;
+            border: #eee solid 1px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <p>我是1200固定布局的内容</p>
+        <div class="item">01</div>
+        <div class="item">02</div>
+        <div class="item">03</div>
+        <div class="item">04</div>
+    </div>
+    <div class="container-mobile">
+        <p>我是移动版内容1</p>
+        <div class="item">01</div>
+        <div class="item">02</div>
+        <div class="item">03</div>
+        <div class="item">04</div>
+    </div>
+    <div class="container-flex">
+        <p>我是flex布局</p>
+        <div class="item">01</div>
+        <div class="item">02</div>
+        <div class="item">03</div>
+        <div class="item">04</div>
+    </div>
+</body>
+</html>
